@@ -20,6 +20,7 @@ post '/' do
     res = slack_client.users_info(user: profile_slack_user_name)
     profile_slack_user_email = res['user']['profile']['email']
 
+    # Todo: get user profile
     profile_name = ""
     profile_photo_url = "https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png"  #dummy
     profile_emp_no = ""
