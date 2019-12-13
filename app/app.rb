@@ -26,6 +26,7 @@ post '/' do
     profile_emp_no = ""
     profile_group = ""
     profile_position = ""
+    profile_url = ""
 
     block = [
       type: "section",
@@ -50,6 +51,10 @@ post '/' do
         {
           type: "mrkdwn",
           text: "*役職*\n#{profile_position}"
+        }
+        {
+          type: "mrkdwn",
+          text: "*自己紹介*\n#{profile_url}"
         }
       ]
     ]
